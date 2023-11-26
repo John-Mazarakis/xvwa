@@ -32,7 +32,7 @@
                 include('../../config.php');
                 if($current_user){
                     if(isset($_GET['submit'])){
-                        if(empty($password) && empty($password)){
+                        if(empty($password) && empty($confirm)){
                             echo "Passwords can not be blank !! Try Again ";
                         }else if($password != $confirm){
                             echo "Passwords don't match !! Try Again";
