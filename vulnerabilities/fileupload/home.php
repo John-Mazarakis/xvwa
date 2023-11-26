@@ -17,7 +17,12 @@
       </div>
 
       <div class="well">
-        <table width="100%" style="border-collapse:collapse; table-layout:fixed;"><tr><td>
+        <table width="100%" style="border-collapse:collapse; table-layout:fixed;">
+	<tr>
+		<th>Form Section</th>
+		<th>PHP Section</th>
+	</tr>
+	 <tr><td>
           <div class="col-lg-12"> 
             <p><h4>Add New Item to the Coffee List</h4><br>
               <form method='post' action='' enctype="multipart/form-data">
