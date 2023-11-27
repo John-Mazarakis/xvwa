@@ -16,7 +16,7 @@
             <li class="dropdown" id="menuLogin">
                 <?php
 
-                    include('config.php');
+                    include_once('config.php');
 
                     if(isset($_SESSION['user'])){
                         echo "<a href='#' class='dropdown-toggle' data-toggle='dropdown'> " . ucfirst(($_SESSION['user'])) . " <b class='caret'></b></a>";
