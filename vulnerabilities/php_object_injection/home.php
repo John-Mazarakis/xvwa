@@ -28,10 +28,13 @@ jection">https://www.owasp.org/index.php/PHP_Object_Injection</a></p></strong>
                                 }
 
                                 function __wakeup(){
-                                    if(isset($this->inject) && is_string($this->inject) && preg_match('/^[a-zA-Z0-9_ ;=+*\/-]+$/', $this->inject)){
-                                        eval($this->inject);
+                                    if (isset($this->inject) &&
+                                    is_string($this->inject) &&
+                                    preg_match('/^[a-zA-Z0-9_ ;=+*\/-]+$/', $this->inject)) {
+                                        $this->executeCode($this->inject);
                                     }
                                 }
+
                             }
                             if(isset($_REQUEST['r'])){  
 
