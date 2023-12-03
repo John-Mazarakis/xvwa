@@ -53,7 +53,7 @@
             
             error_reporting(E_ALL);
 
-            $itemcode = "XVWA".rand(1000,9999);
+            $itemcode = "XVWA".random_int(1000, 9999);
             $itemname = isset($_POST['item']) ? $_POST['item'] : '';
             $itemdesc = isset($_POST['desc']) ? $_POST['desc'] : '';
             $categ = isset($_POST['categ']) ? $_POST['categ'] : '';

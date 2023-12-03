@@ -98,7 +98,7 @@ $submit = isset($_GET['action']) ? $_GET['action'] : '';
                     echo "<li class=\"cross\">Can not create table users. Try submit/reset again.".mysql_error()." </li>"; 
                 }
             }else{
-                echo DB_CONNECTION_ERROR.mysql_error()."</li>";   
+                echo DB_CONNECTION_ERROR.mysql_error()."</li>";
             }
 
             
