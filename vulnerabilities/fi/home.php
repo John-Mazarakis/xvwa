@@ -30,7 +30,7 @@
                 <?php 
                     $f='readme.txt';
                     echo "<a class=\"btn btn-primary\" href=\".?file=$f\" /> Click here </a><br><br>";
-                    $allowedFiles = ['readme.txt', 'readme2.txt', 'readme3.txt']; 
+                    $allowedFiles = ['readme.txt', 'readme2.txt', 'readme3.txt'];
                     if (isset($_GET['file'])) {
                         $file=$_GET['file'];
                         if (in_array($file, $allowedFiles) && is_readable($file)) {
